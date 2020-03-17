@@ -64,12 +64,16 @@ mod bool;
 mod bytes;
 mod float;
 mod int;
+mod numeric;
 mod record;
 mod str;
 
 // internal types used by other types to encode or decode related formats
 #[doc(hidden)]
 pub mod raw;
+
+#[cfg(feature = "bigdecimal_bigint")]
+mod bigdecimal;
 
 #[cfg(feature = "bigdecimal_bigint")]
 mod bigdecimal;
