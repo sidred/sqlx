@@ -7,6 +7,8 @@
 #![cfg_attr(not(feature = "sqlite"), forbid(unsafe_code))]
 #![recursion_limit = "512"]
 #![cfg_attr(docsrs, feature(doc_cfg))]
+// TODO: Remove this when going public
+#![allow(dead_code, unused)]
 
 #[macro_use]
 pub mod error;
