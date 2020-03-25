@@ -6,6 +6,8 @@ stdenv.mkDerivation rec {
 
   buildInputs = [
     latest.rustChannels.nightly.rust
+    # cargo
+    cargo-edit
     openssl
     fish
     pkg-config
